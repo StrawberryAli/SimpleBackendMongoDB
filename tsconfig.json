@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+      "target": "es2018",
+      "module": "commonjs",
+      "lib": ["es2018", "dom"],
+      "strict": true,
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true,
+      "moduleResolution": "node",
+      "jsx": "react",
+      "outDir": "./dist", // Diretório de saída para os arquivos compilados
+      "rootDir": "./src"  // Diretório raiz do seu código-fonte TypeScript
+    },
+    "include": ["src"], // Inclua todos os arquivos .ts no diretório src
+    "exclude": ["node_modules","dist/*","src/static"]  // Exclua a pasta node_modules da compilação
+  }

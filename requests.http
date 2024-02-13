@@ -1,0 +1,47 @@
+GET http://localhost:3000/users/1 HTTP/1.1
+content-type: application/json
+
+###
+
+GET http://localhost:3000/users HTTP/1.1
+content-type: application/json
+
+
+###
+
+POST http://localhost:3000/users HTTP/1.1
+content-type: application/json
+
+{
+  "id":"2",
+  "userName":"b",
+  "email":"aaa@gmail.com",
+  "password":"5678"
+}
+
+###
+
+POST http://localhost:3000/users/1 HTTP/1.1
+content-type: application/json
+
+{
+  "id":"1",
+  "userName":"Abacaxi dos brabo",
+  "email":"email@gmail.com",
+  "password":"1234",
+  "itens":[{"nome":"Abacaxi","quantidade":12}]
+}
+
+###
+
+DELETE http://localhost:3000/users/2 HTTP/1.1
+content-type: application/json
+
+###
+
+DELETE http://localhost:3000/users HTTP/1.1
+content-type: application/json
+
+{
+  "id":"2"
+}
